@@ -36,7 +36,7 @@ class _FooterState extends State<Footer> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        if (widget.width > 1200) {
+        if (widget.width > 700) {
           return _buildWideContainers();
         } else {
           return _buildNormalContainer();

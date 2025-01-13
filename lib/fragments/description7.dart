@@ -1,6 +1,7 @@
 import 'package:job_homepage_1/fragments/widgets/main_title.dart';
 import 'package:job_homepage_1/fragments/widgets/video.dart';
 import 'package:job_homepage_1/fragments/widgets/video_button.dart';
+import 'package:job_homepage_1/fragments/widgets/video_thumbnail.dart';
 import 'package:job_homepage_1/fragments/widgets/video_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:job_homepage_1/loem.dart';
@@ -128,9 +129,9 @@ class Description7 extends StatelessWidget {
             ),
             Column(
                 children: [
-                  Container(child: VideoWidget(videoPath: 'assets/video/video5.mp4'), width: width/2.3),
+                  Container(child: ThumbnailVideoPlayerWidget(videoPath: 'assets/video/video5.mp4', thumbnailPath: "",), width: width/2.3),
                   SizedBox(height: width/25),
-                  Container(child: VideoWidget(videoPath: 'assets/video/video6.mp4'), width: width/2.3),
+                  Container(child: ThumbnailVideoPlayerWidget(videoPath: 'assets/video/video6.mp4', thumbnailPath: "",), width: width/2.3),
                 ]),
           ],
         ),
